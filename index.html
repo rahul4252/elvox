@@ -140,7 +140,7 @@ h2 em{font-style:italic;color:var(--cyan)}
   grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;
 }
 .service-card.featured::before{display:none}
-.svc-icon{width:2.3rem;height:2.3rem;margin-bottom:1.2rem;color:var(--cyan)}
+.svc-icon{width:2.3rem;height:2.3rem;margin-bottom:1.2rem;color:var(--cyan);display:block}
 .service-card h3{font-family:'Cormorant Garamond',serif;font-size:1.32rem;font-weight:400;color:var(--white);margin-bottom:0.6rem}
 .service-card p{font-size:0.85rem;line-height:1.75;color:var(--muted)}
 .svc-num{position:absolute;top:1.4rem;right:1.6rem;font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:300;color:rgba(0,200,255,0.06);line-height:1}
@@ -346,10 +346,12 @@ h1{animation-delay:0.22s}
     <!-- FEATURED: Video Production -->
     <div class="service-card featured reveal">
       <div>
-        <div class="featured-badge">★ Signature Service</div>
-        <svg class="svc-icon" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
-          <path d="M15 10l4.553-2.277A1 1 0 0121 8.723v6.554a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
-        </svg>
+        <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:1.2rem;">
+          <svg fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24" style="width:2.3rem;height:2.3rem;color:var(--cyan);flex-shrink:0;">
+            <path d="M15 10l4.553-2.277A1 1 0 0121 8.723v6.554a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/>
+          </svg>
+          <div class="featured-badge" style="margin-bottom:0;">★ Signature Service</div>
+        </div>
         <h3 style="font-size:1.65rem;">Video Production &amp; Storytelling</h3>
         <p style="max-width:420px;margin-top:0.5rem;">This is the heart of Elvox. We produce brand films, product stories, documentary-style content, and social reels that don't just inform — they move. From concept and scripting to shooting, editing, and colour grading, every frame carries your brand's soul.</p>
         <div class="featured-tags">
